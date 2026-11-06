@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>韩剧tv网页版-韩剧tv网页版在线观看_韩剧tv电脑版入口</title>
+<meta name="description" content="韩剧tv网页版首页导航：在电脑浏览器直接打开韩剧tv网页版，了解网页版入口、在线观看方式、剧集分类浏览与常见使用问题，无需安装即可追韩剧。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23151a2b'/%3E%3Cpath d='M18 20h20a8 8 0 0 1 0 16H18z' fill='none' stroke='%23ff5c8a' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M24 40h22' stroke='%23ffd166' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='46' cy='20' r='5' fill='%234cc9f0'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#151a2b;
+    --ink-2:#2a3350;
+    --muted:#6b7390;
+    --line:#e6e8f2;
+    --pink:#ff5c8a;
+    --pink-soft:#ffe8ef;
+    --yellow:#ffd166;
+    --cyan:#4cc9f0;
+    --bg:#fbfbfe;
+    --card:#ffffff;
+    --radius:18px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.75;
+    font-size:16px;
+  }
+  a{color:inherit;text-decoration:none;}
+  img,svg{display:block;max-width:100%;}
+  .wrap{width:min(1120px,92%);margin:0 auto;}
+  /* header */
+  header.site{
+    position:sticky;top:0;z-index:20;
+    background:rgba(251,251,254,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding:12px 0;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px;}
+  .brand .mark{width:36px;height:36px;flex:0 0 36px;}
+  nav.links{display:flex;gap:6px;flex-wrap:wrap;font-size:15px;}
+  nav.links a{
+    padding:6px 12px;border-radius:999px;color:var(--ink-2);
+    transition:background .2s,color .2s;
+  }
+  nav.links a:hover{background:var(--pink-soft);color:var(--pink);}
+  nav.links a.key{background:var(--ink);color:#fff;}
+  nav.links a.key:hover{background:var(--pink);color:#fff;}
+  /* hero */
+  .hero{
+    position:relative;overflow:hidden;
+    background:linear-gradient(160deg,#151a2b 0%,#232b47 58%,#2f2540 100%);
+    color:#fff;
+    padding:56px 0 60px;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-90px;top:-90px;width:380px;height:380px;
+    background:radial-gradient(circle,rgba(255,92,138,.42),transparent 68%);
+    border-radius:50%;pointer-events:none;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;position:relative;z-index:2;}
+  .kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;letter-spacing:2px;color:var(--yellow);
+    border:1px solid rgba(255,209,102,.45);border-radius:999px;padding:4px 14px;margin-bottom:18px;
+  }
+  h1{
+    font-size:clamp(28px,4.4vw,46px);
+    line-height:1.25;margin:0 0 16px;font-weight:900;letter-spacing:.5px;
+  }
+  h1 .hl{color:var(--pink);}
+  .hero p.lead{
+    color:#d5d9ea;font-size:16.5px;margin:0 0 26px;max-width:34em;
+  }
+  .cta{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 24px;border-radius:999px;font-weight:700;font-size:15px;
+    border:1px solid transparent;cursor:pointer;transition:transform .18s,box-shadow .18s,background .18s;
+  }
+  .btn-main{background:var(--pink);color:#fff;box-shadow:0 10px 24px rgba(255,92,138,.35);}
+  .btn-main:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(255,92,138,.45);}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.35);}
+  .btn-ghost:hover{background:rgba(255,255,255,.12);}
+  .btn.disabled{
+    background:#3a4160;color:#aeb4cc;pointer-events:none;border-color:transparent;box-shadow:none;
+  }
+  .hero-art{
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);
+    border-radius:24px;padding:18px;
+  }
+  .hero-art .row{display:flex;align-items:center;gap:12px;padding:10px 6px;border-bottom:1px dashed rgba(255,255,255,.16);}
+  .hero-art .row:last-child{border-bottom:0;}
+  .dot{width:10px;height:10px;border-radius:50%;flex:0 0 10px;}
+  .hero-art .row span{font-size:14px;color:#dfe3f1;}
+  .hero-art .row b{margin-left:auto;font-size:12px;color:#9aa2bf;font-weight:600;}
+  /* section base */
+  section{padding:56px 0;}
+  section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .sec-head{margin-bottom:26px;}
+  .sec-head .tag{
+    font-size:12.5px;letter-spacing:2px;color:var(--pink);font-weight:700;
+  }
+  h2{font-size:clamp(21px,2.6vw,28px);margin:6px 0 10px;font-weight:800;line-height:1.35;}
+  .sec-head p{margin:0;color:var(--muted);max-width:46em;font-size:15px;}
+  /* feature cards */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px;transition:transform .2s,box-shadow .2s,border-color .2s;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(21,26,43,.08);border-color:#f4c6d5;}
+  .card .ico{width:44px;height:44px;margin-bottom:14px;}
+  .card h3{margin:0 0 8px;font-size:17px;font-weight:800;}
+  .card p{margin:0;color:var(--muted);font-size:14.5px;}
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s;}
+  .step{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 22px;position:relative;
+  }
+  .step::before{
+    counter-increment:s;content:counter(s);
+    font-size:13px;font-weight:800;color:#fff;background:var(--ink);
+    width:30px;height:30px;border-radius:9px;display:grid;place-items:center;margin-bottom:14px;
+  }
+  .step h3{margin:0 0 8px;font-size:16px;}
+  .step p{margin:0;color:var(--muted);font-size:14.5px;}
+  /* genre list */
+  .genres{display:flex;flex-wrap:wrap;gap:10px;}
+  .genres a{
+    padding:9px 18px;border-radius:999px;background:#fff;border:1px solid var(--line);
+    font-size:14.5px;color:var(--ink-2);transition:.2s;
+  }
+  .genres a:hover{background:var(--pink);border-color:var(--pink);color:#fff;}
+  .genres a span{color:#a6adc6;font-size:12.5px;margin-left:6px;}
+  .genres a:hover span{color:#ffe0e9;}
+  /* two column text + aside */
+  .split{display:grid;grid-template-columns:1.6fr 1fr;gap:34px;align-items:start;}
+  .prose h3{font-size:17px;margin:26px 0 8px;}
+  .prose h3:first-child{margin-top:0;}
+  .prose p{margin:0 0 12px;color:#39405c;font-size:15.5px;}
+  .aside{
+    background:var(--ink);color:#e7eaf5;border-radius:var(--radius);padding:24px;
+  }
+  .aside h3{margin:0 0 12px;font-size:16px;color:#fff;}
+  .aside ul{margin:0;padding-left:18px;font-size:14.5px;color:#c3c9de;}
+  .aside li{margin-bottom:10px;}
+  .aside .note{
+    margin-top:16px;font-size:13px;color:#9aa2bf;border-top:1px solid rgba(255,255,255,.14);padding-top:12px;
+  }
+  /* faq */
+  details{
+    background:#fff;border:1px solid var(--line);border-radius:14px;padding:4px 20px;margin-bottom:12px;
+  }
+  details[open]{border-color:#f4c6d5;box-shadow:0 8px 20px rgba(21,26,43,.05);}
+  summary{
+    cursor:pointer;font-weight:700;font-size:15.5px;padding:14px 0;list-style:none;
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"＋";color:var(--pink);font-weight:700;font-size:18px;line-height:1;}
+  details[open] summary::after{content:"－";}
+  details p{margin:0 0 16px;color:var(--muted);font-size:14.5px;}
+  /* footer */
+  footer.site{
+    background:var(--ink);color:#aab1c9;padding:40px 0 30px;font-size:14px;
+  }
+  .foot-top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start;}
+  .foot-brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:17px;margin-bottom:10px;}
+  .foot-brand .mark{width:30px;height:30px;flex:0 0 30px;}
+  footer.site p{margin:0 0 8px;max-width:42em;line-height:1.8;}
+  .foot-links{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;}
+  .foot-links a:hover{color:var(--pink);}
+  .copy{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;color:#7d85a0;}
+  /* responsive */
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:28px;}
+    .hero-art{order:2;}
+    .cards,.steps{grid-template-columns:1fr 1fr;}
+    .split{grid-template-columns:1fr;}
+  }
+  @media (max-width:640px){
+    body{font-size:15.5px;}
+    section{padding:40px 0;}
+    .hero{padding:38px 0 46px;}
+    .cards,.steps{grid-template-columns:1fr;}
+    .nav{padding:10px 0;}
+    nav.links{font-size:14px;}
+    nav.links a{padding:6px 10px;}
+    .brand{font-size:17px;}
+    .btn{padding:11px 20px;font-size:14.5px;}
+    .prose p,.card p,.step p{font-size:14.8px;}
+  }
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#151a2b"/>
+        <path d="M18 20h20a8 8 0 0 1 0 16H18z" fill="none" stroke="#ff5c8a" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M24 40h22" stroke="#ffd166" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="46" cy="20" r="5" fill="#4cc9f0"/>
+      </svg>
+      <span>韩剧tv网页版</span>
+    </div>
+    <nav class="links" aria-label="主导航">
+      <a href="#intro">网页版说明</a>
+      <a href="#how">使用步骤</a>
+      <a href="#genre">剧集分类</a>
+      <a href="#notice">常见问题</a>
+      <a class="key" href="#start">进入网页版</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="start">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">电脑浏览器 · 直接打开</span>
+      <h1>韩剧tv网页版</h1>
+      <p class="lead">韩剧tv网页版是面向电脑浏览器的观看入口，打开网页即可浏览韩剧剧集与分类列表，不必在电脑上额外安装客户端。本页说明网页版的打开方式、页面里能看到哪些内容，以及使用中容易遇到的几个问题。</p>
+      <div class="cta">
+        <a class="btn btn-main" href="#how">查看打开步骤</a>
+        <a class="btn btn-ghost" href="#genre">浏览剧集分类</a>
+        <a class="btn disabled" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">下载</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="row"><span class="dot" style="background:#ff5c8a"></span><span>网页版首页入口</span><b>浏览器直接访问</b></div>
+      <div class="row"><span class="dot" style="background:#ffd166"></span><span>剧集分类与列表</span><b>按类型浏览</b></div>
+      <div class="row"><span class="dot" style="background:#4cc9f0"></span><span>播放页与选集</span><b>登录后观看</b></div>
+      <div class="row"><span class="dot" style="background:#9aa2bf"></span><span>无需安装客户端</span><b>电脑端优先</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="intro">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">网页版定位</span>
+      <h2>韩剧tv网页版能做什么</h2>
+      <p>网页版解决的是“在电脑上不装软件也能打开看”的需求，重点在于入口、分类浏览和播放页三件事。以下三点是访问者最常关心的内容。</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="8" width="40" height="26" rx="4" fill="none" stroke="#ff5c8a" stroke-width="3"/><path d="M18 40h12" stroke="#ffd166" stroke-width="3" stroke-linecap="round"/><path d="M24 34v6" stroke="#ffd166" stroke-width="3"/></svg>
+        <h3>浏览器直接打开</h3>
+        <p>在电脑浏览器地址栏输入网页版入口，即可进入韩剧tv网页版首页，不需要下载安装包，也不必配置运行环境。</p>
+      </article>
+      <article class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="6" width="15" height="15" rx="3" fill="#ffe8ef"/><rect x="27" y="6" width="15" height="15" rx="3" fill="#e6f7fd"/><rect x="6" y="27" width="15" height="15" rx="3" fill="#fff5d9"/><rect x="27" y="27" width="15" height="15" rx="3" fill="#eef0f8"/></svg>
+        <h3>按分类找剧</h3>
+        <p>网页版通常按类型、地区与更新状态组织剧集列表，想找浪漫、悬疑或家庭题材，可以从分类入口逐层进入。</p>
+      </article>
+      <article class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18" fill="none" stroke="#4cc9f0" stroke-width="3"/><path d="M20 16l12 8-12 8z" fill="#ff5c8a"/></svg>
+        <h3>播放页选集</h3>
+        <p>进入剧集详情页后可看到简介与集数列表，选择具体一集进入播放页；部分内容需要登录账号后才能观看。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">打开步骤</span>
+      <h2>三步在电脑上使用韩剧tv网页版</h2>
+      <p>顺序不必复杂：先打开入口，再挑剧，最后进入播放页。每一步都对应网页版里真实存在的页面层级。</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>打开入口地址</h3>
+        <p>在电脑浏览器中访问韩剧tv网页版入口，页面会先加载首页推荐与分类导航。建议使用较新版本的 Chrome、Edge 等浏览器。</p>
+      </div>
+      <div class="step">
+        <h3>按分类或搜索找剧</h3>
+        <p>从首页的分类栏目进入对应列表，或用页面内的搜索框输入剧名。列表页会显示剧名、题材与更新情况。</p>
+      </div>
+      <div class="step">
+        <h3>进入详情页观看</h3>
+        <p>点击剧集卡片进入详情页，选择集数后进入播放页。若提示登录，按页面指引完成账号登录即可继续。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="genre">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">剧集分类</span>
+      <h2>从分类进入，更快找到想看的韩剧</h2>
+      <p>韩剧tv网页版的列表一般按题材与观看偏好分组。下面的分类仅作浏览方向说明，具体收录内容以网页版实际页面为准。</p>
+    </div>
+    <div class="genres">
+      <a href="#genre">浪漫爱情 <span>情感线为主</span></a>
+      <a href="#genre">悬疑推理 <span>案件与反转</span></a>
+      <a href="#genre">家庭生活 <span>日常群像</span></a>
+      <a href="#genre">职场题材 <span>都市背景</span></a>
+      <a href="#genre">古装历史 <span>时代设定</span></a>
+      <a href="#genre">青春校园 <span>成长故事</span></a>
+      <a href="#genre">医疗法律 <span>行业剧</span></a>
+      <a href="#genre">正在更新 <span>追更入口</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap split">
+    <div class="prose">
+      <h2>使用韩剧tv网页版前值得了解的细节</h2>
+      <h3>网页版与客户端的差别</h3>
+      <p>韩剧tv网页版运行在浏览器里，页面能力受浏览器限制，播放清晰度、缓存与部分交互会与客户端不同。它的优势是不占本地安装空间，换一台电脑登录账号就能继续使用，适合在办公室或临时使用的设备上打开。</p>
+      <h3>关于观看权限</h3>
+      <p>网页版中的剧集并非全部可以直接播放，部分内容会要求登录账号，个别内容可能因版权或地区原因无法观看。遇到页面提示时，以页面给出的说明为准，不要轻信站外所谓的“解锁”链接。</p>
+      <h3>关于页面体验</h3>
+      <p>如果首页加载缓慢，可以先检查网络，再尝试刷新页面或更换浏览器；播放卡顿时优先降低清晰度。网页版的功能范围会随站点调整而变化，本页描述的是网页版的一般使用方式。</p>
+    </div>
+    <aside class="aside">
+      <h3>使用提醒</h3>
+      <ul>
+        <li>认准自己常用的入口地址，避免从陌生短链跳转。</li>
+        <li>登录信息只在官方页面填写，不向第三方工具提供。</li>
+        <li>网页版剧集以实际页面展示为准，本页不作内容承诺。</li>
+      </ul>
+      <div class="note">韩剧tv网页版适合电脑端浏览，手机端页面布局与功能可能不同。</div>
+    </aside>
+  </div>
+</section>
+
+<section id="notice">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">常见问题</span>
+      <h2>韩剧tv网页版常见疑问</h2>
+      <p>下面几个问题覆盖了访问者打开网页版时最常遇到的情况。</p>
+    </div>
+    <details open>
+      <summary>韩剧tv网页版需要下载安装吗？</summary>
+      <p>不需要。网页版在浏览器中打开即可使用，页面顶部提供的“下载”入口当前为占位状态，暂不可点击，后续如有正式安装包会在此处更新。</p>
+    </details>
+    <details>
+      <summary>网页版打不开或一直加载怎么办？</summary>
+      <p>先确认网络连接正常，再尝试刷新页面或更换浏览器。若多个页面都无法加载，可能是入口地址发生变化，建议从自己此前记录的有效地址重新进入。</p>
+    </details>
+    <details>
+      <summary>为什么有的剧集点开无法播放？</summary>
+      <p>常见原因是需要登录账号，或该内容在当前地区不可用。网页版会以页面提示的方式说明限制，按提示操作即可，不必尝试站外工具。</p>
+    </details>
+    <details>
+      <summary>网页版可以在手机上用吗？</summary>
+      <p>可以用浏览器访问，但韩剧tv网页版主要面向电脑端设计，手机上的排版与操作方式会有差异，观看体验不如在电脑上稳定。</p>
+    </details>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#232b47"/>
+            <path d="M18 20h20a8 8 0 0 1 0 16H18z" fill="none" stroke="#ff5c8a" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M24 40h22" stroke="#ffd166" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="46" cy="20" r="5" fill="#4cc9f0"/>
+          </svg>
+          <span>韩剧tv网页版</span>
+        </div>
+        <p>本页为韩剧tv网页版的导航说明页，介绍网页版入口、分类浏览与播放页使用方式。剧集内容、功能范围与可用状态以网页版实际页面为准。</p>
+      </div>
+      <div class="foot-links">
+        <a href="#intro">网页版说明</a>
+        <a href="#how">使用步骤</a>
+        <a href="#genre">剧集分类</a>
+        <a href="#notice">常见问题</a>
+      </div>
+    </div>
+    <div class="copy">韩剧tv网页版 · 页面内容仅作使用说明，不提供剧集资源存储。</div>
+  </div>
+</footer>
+
+</body>
+</html>

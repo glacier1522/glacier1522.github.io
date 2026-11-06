@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一本道理免费在线观看-一本道理在线播放_免费观看一本道理全集</title>
+<meta name="description" content="一本道理免费在线观看页面，围绕一本道理在线播放需求组织内容，说明观看入口、剧集信息与播放方式，帮助观众找到一本道理免费观看的清晰路径。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2a3a'/%3E%3Cpath d='M20 18h18a6 6 0 0 1 6 6v22H26a6 6 0 0 1-6-6z' fill='none' stroke='%23e8b34a' stroke-width='3'/%3E%3Cpath d='M26 26h12M26 33h12' stroke='%23e8b34a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#182430;
+    --ink-soft:#3c4a58;
+    --muted:#6b7785;
+    --paper:#f6f2e9;
+    --paper-2:#fffdf7;
+    --line:#dfd7c7;
+    --gold:#b8832b;
+    --gold-soft:#e8b34a;
+    --deep:#1b2a3a;
+    --deep-2:#24384d;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Noto Serif SC","Songti SC","Source Han Serif SC",Georgia,"Microsoft YaHei",serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.85;
+    font-size:17px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  img,svg{display:block;max-width:100%}
+  .wrap{width:min(1120px,92vw);margin:0 auto}
+
+  /* ---------- header ---------- */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(27,42,58,.97);
+    color:#f3ede0;
+    border-bottom:2px solid var(--gold);
+    backdrop-filter:blur(6px);
+  }
+  .nav-inner{display:flex;align-items:center;gap:22px;min-height:66px;flex-wrap:wrap}
+  .logo{display:flex;align-items:center;gap:11px;font-size:18px;font-weight:700;letter-spacing:.5px;color:#f7efdd}
+  .logo svg{flex:0 0 auto}
+  .logo .brand{white-space:nowrap}
+  nav.main{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+  nav.main a{
+    padding:7px 13px;border-radius:6px;font-size:15px;color:#d8cfbd;
+    transition:.2s;font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  }
+  nav.main a:hover{background:rgba(232,179,74,.16);color:#fff}
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:
+      radial-gradient(circle at 88% 12%, rgba(232,179,74,.20), transparent 46%),
+      linear-gradient(160deg,var(--deep) 0%,var(--deep-2) 62%,#2e455c 100%);
+    color:#f4ecdc;
+    padding:64px 0 58px;
+    position:relative;overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-90px;bottom:-110px;width:340px;height:340px;
+    border:2px solid rgba(232,179,74,.22);border-radius:50%;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:48px;align-items:center;position:relative;z-index:2}
+  .kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+    font-size:13px;letter-spacing:2px;color:var(--gold-soft);
+    border:1px solid rgba(232,179,74,.45);border-radius:999px;padding:5px 15px;margin-bottom:20px;
+  }
+  h1{
+    font-size:clamp(26px,4vw,40px);
+    line-height:1.35;font-weight:800;letter-spacing:1px;color:#fff8e8;
+    margin-bottom:18px;
+  }
+  .hero p.lead{
+    font-size:16.5px;color:#d6dde5;max-width:36em;
+    font-family:"Microsoft YaHei","PingFang SC",sans-serif;line-height:1.95;
+  }
+  .hero-actions{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;
+    padding:12px 26px;border-radius:8px;font-size:15.5px;font-weight:700;
+    font-family:"Microsoft YaHei","PingFang SC",sans-serif;transition:.22s;
+    border:1px solid transparent;
+  }
+  .btn-primary{background:linear-gradient(135deg,#e8b34a,#c98f2c);color:#26200f;box-shadow:0 8px 22px rgba(201,143,44,.30)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(201,143,44,.42)}
+  .btn-ghost{border-color:rgba(232,179,74,.55);color:#f0d9a8}
+  .btn-ghost:hover{background:rgba(232,179,74,.14)}
+  .btn[aria-disabled="true"]{opacity:.72;cursor:default}
+
+  .poster{
+    background:linear-gradient(170deg,rgba(255,255,255,.10),rgba(255,255,255,.03));
+    border:1px solid rgba(232,179,74,.35);border-radius:16px;
+    padding:18px;display:flex;flex-direction:column;gap:14px;
+  }
+  .poster .frame{
+    border-radius:10px;overflow:hidden;background:#12202d;aspect-ratio:4/3;
+    display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.08);
+  }
+  .poster .meta{display:flex;justify-content:space-between;align-items:center;font-size:13.5px;color:#c9d3de;font-family:"Microsoft YaHei","PingFang SC",sans-serif}
+  .poster .tag{color:var(--gold-soft);letter-spacing:1px}
+
+  /* ---------- section base ---------- */
+  section{padding:60px 0}
+  .sec-head{margin-bottom:32px;max-width:46em}
+  .sec-head .num{
+    font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+    font-size:13px;letter-spacing:3px;color:var(--gold);font-weight:700;
+  }
+  h2{
+    font-size:clamp(21px,2.6vw,27px);font-weight:800;letter-spacing:.5px;
+    margin:6px 0 10px;color:var(--deep);
+  }
+  .sec-head p{color:var(--ink-soft);font-size:16px;font-family:"Microsoft YaHei","PingFang SC",sans-serif;line-height:1.9}
+
+  /* ---------- entry cards ---------- */
+  .entries{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{
+    background:var(--paper-2);border:1px solid var(--line);border-radius:14px;
+    padding:26px 24px;position:relative;transition:.24s;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(27,42,58,.10);border-color:#cbb98f}
+  .card .ico{
+    width:44px;height:44px;border-radius:10px;background:#1b2a3a;
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+  }
+  .card h3{font-size:18px;font-weight:700;color:var(--deep);margin-bottom:8px}
+  .card p{font-size:15px;color:var(--ink-soft);font-family:"Microsoft YaHei","PingFang SC",sans-serif;line-height:1.85}
+  .card .link{
+    display:inline-block;margin-top:14px;font-size:14px;color:var(--gold);font-weight:700;
+    font-family:"Microsoft YaHei","PingFang SC",sans-serif;
+  }
+  .card .link:hover{text-decoration:underline}
+
+  /* ---------- article / reading ---------- */
+  .read{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .read-grid{display:grid;grid-template-columns:1.55fr 1fr;gap:52px;align-items:start}
+  .prose p{margin-bottom:18px;color:#28333f;font-size:16.5px}
+  .prose p strong{color:var(--deep);font-weight:800}
+  .aside-box{
+    background:var(--deep);color:#e5e0d2;border-radius:14px;padding:28px 26px;
+    border-left:4px solid var(--gold);
+  }
+  .aside-box h3{font-size:17px;color:#f7efdd;margin-bottom:14px;letter-spacing:.5px}
+  .aside-box ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+  .aside-box li{font-size:14.5px;font-family:"Microsoft YaHei","PingFang SC",sans-serif;color:#c8d1db;line-height:1.8;padding-left:16px;position:relative}
+  .aside-box li::before{content:"";position:absolute;left:0;top:.72em;width:6px;height:6px;border-radius:50%;background:var(--gold-soft)}
+
+  /* ---------- episodes list ---------- */
+  .eps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .ep{
+    background:var(--paper-2);border:1px solid var(--line);border-radius:10px;
+    padding:14px 16px;display:flex;align-items:center;justify-content:space-between;
+    font-family:"Microsoft YaHei","PingFang SC",sans-serif;font-size:14.5px;color:var(--ink-soft);
+    transition:.2s;
+  }
+  .ep:hover{border-color:var(--gold);color:var(--deep);background:#fffaf0}
+  .ep .no{font-weight:700;color:var(--deep)}
+  .ep .play{font-size:12px;color:var(--gold);letter-spacing:1px}
+
+  /* ---------- qa ---------- */
+  .qa-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .qa{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:22px 24px}
+  .qa h3{font-size:16.5px;color:var(--deep);margin-bottom:8px;font-weight:700}
+  .qa h3::before{content:"问 ";color:var(--gold);font-weight:800}
+  .qa p{font-size:15px;color:var(--ink-soft);font-family:"Microsoft YaHei","PingFang SC",sans-serif;line-height:1.85}
+  .qa p::before{content:"答 ";color:var(--deep);font-weight:700}
+
+  /* ---------- download ---------- */
+  .dl-band{
+    background:linear-gradient(120deg,#1b2a3a,#2c4055);color:#f2ebdb;
+    border-radius:16px;padding:40px 44px;display:flex;align-items:center;gap:36px;justify-content:space-between;flex-wrap:wrap;
+  }
+  .dl-band h2{color:#fff8e8;margin-bottom:8px}
+  .dl-band p{color:#c6d0da;font-size:15.5px;font-family:"Microsoft YaHei","PingFang SC",sans-serif;max-width:34em;line-height:1.85}
+
+  /* ---------- footer ---------- */
+  footer.site{background:#152230;color:#93a0ad;padding:44px 0 34px;font-family:"Microsoft YaHei","PingFang SC",sans-serif;font-size:14px}
+  .foot-top{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.09)}
+  .foot-brand{display:flex;align-items:center;gap:10px;color:#e8dfc9;font-size:15.5px;font-weight:700;letter-spacing:.5px}
+  .foot-links{display:flex;gap:22px;flex-wrap:wrap}
+  .foot-links a:hover{color:var(--gold-soft)}
+  .foot-bottom{padding-top:20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;line-height:1.8;color:#7d8b99}
+  .foot-bottom a{color:#a8b4c0}
+  .foot-bottom a:hover{color:var(--gold-soft)}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:34px}
+    .poster{max-width:420px}
+    .entries{grid-template-columns:1fr 1fr}
+    .read-grid{grid-template-columns:1fr;gap:34px}
+    .eps{grid-template-columns:repeat(2,1fr)}
+    .qa-grid{grid-template-columns:1fr}
+    .dl-band{padding:32px 26px}
+  }
+  @media (max-width:600px){
+    body{font-size:16px}
+    .nav-inner{gap:12px;padding:10px 0}
+    .logo{font-size:15.5px}
+    nav.main{margin-left:0;width:100%;justify-content:flex-start;overflow-x:auto;padding-bottom:4px}
+    nav.main a{font-size:14px;padding:6px 10px;white-space:nowrap}
+    section{padding:44px 0}
+    .entries{grid-template-columns:1fr}
+    .hero{padding:44px 0 40px}
+    .hero-actions .btn{flex:1 1 46%;justify-content:center}
+    .eps{grid-template-columns:1fr 1fr;gap:10px}
+    .ep{padding:12px 12px;font-size:13.5px}
+  }
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#top" aria-label="返回页面顶部">
+      <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#24384d"/>
+        <path d="M20 16h18a7 7 0 0 1 7 7v25H27a7 7 0 0 1-7-7z" fill="none" stroke="#e8b34a" stroke-width="3"/>
+        <path d="M27 26h11M27 33h11" stroke="#e8b34a" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <span class="brand">一本道理免费在线观看</span>
+    </a>
+    <nav class="main" aria-label="主导航">
+      <a href="#entry">观看入口</a>
+      <a href="#about">作品内容</a>
+      <a href="#list">剧集目录</a>
+      <a href="#qa">常见问题</a>
+      <a href="#download">离线保存</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-h1">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker">在线播放 · 剧集索引</span>
+        <h1 id="hero-h1">一本道理免费在线观看</h1>
+        <p class="lead">这里整理的是一本道理免费在线观看的页面信息：从观看入口、片源说明到逐集目录，帮助你先了解作品定位，再决定从哪里开始播放。页面内容围绕一本道理在线播放的实际需求展开，不承载与观看无关的跳转。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#entry">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            进入观看入口
+          </a>
+          <a class="btn btn-ghost" href="#list">查看剧集目录</a>
+        </div>
+      </div>
+      <div class="poster" aria-hidden="true">
+        <div class="frame">
+          <svg viewBox="0 0 200 150" width="100%" height="100%" role="img" aria-label="作品封面示意">
+            <defs>
+              <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#2e455c"/><stop offset="1" stop-color="#16232f"/>
+              </linearGradient>
+            </defs>
+            <rect width="200" height="150" fill="url(#pg)"/>
+            <circle cx="152" cy="42" r="20" fill="none" stroke="#e8b34a" stroke-opacity=".55" stroke-width="2"/>
+            <path d="M62 38h52a8 8 0 0 1 8 8v62H70a8 8 0 0 1-8-8z" fill="none" stroke="#e8b34a" stroke-width="2.4"/>
+            <path d="M76 60h34M76 74h34M76 88h22" stroke="#e8b34a" stroke-width="2.4" stroke-linecap="round" stroke-opacity=".85"/>
+            <path d="M128 96l16-9v18z" fill="#e8b34a" fill-opacity=".75"/>
+          </svg>
+        </div>
+        <div class="meta"><span class="tag">剧情 · 剧集</span><span>共 12 集</span></div>
+        <div class="meta"><span>播放方式</span><span>在线 / 缓存</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTRY -->
+  <section id="entry">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="num">观 看 路 径</div>
+        <h2>一本道理免费在线观看的三个入口</h2>
+        <p>访问这类页面时，观众通常先确认能不能看、在哪看、看哪一集。下面三个入口分别对应这三种需求，顺序按实际使用频率排列。</p>
+      </div>
+      <div class="entries">
+        <article class="card">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#e8b34a" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <h3>直接播放</h3>
+          <p>从第一集开始顺序播放，适合初次接触这部剧的观众。播放器会记录上次看到的位置，回到页面时可接着看。</p>
+          <a class="link" href="#list">从第 1 集开始 →</a>
+        </article>
+        <article class="card">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8b34a" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg>
+          </div>
+          <h3>按集选择</h3>
+          <p>已经看过前几集的观众，可直接在剧集目录中定位到目标集数。目录按顺序排列，集号与播放内容一一对应。</p>
+          <a class="link" href="#list">打开剧集目录 →</a>
+        </article>
+        <article class="card">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8b34a" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+          </div>
+          <h3>离线缓存</h3>
+          <p>网络不稳定时，可先把已开放的剧集缓存到本地再看。缓存入口与在线播放共用同一份片源说明。</p>
+          <a class="link" href="#download">了解缓存方式 →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="read">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="num">作 品 说 明</div>
+        <h2>在看之前，先弄清一本道理讲的是什么</h2>
+      </div>
+      <div class="read-grid">
+        <div class="prose">
+          <p><strong>一本道理免费在线观看</strong>这一页面服务的是具体观众，而不是泛泛的影视列表。作品以“道理”为名，内容侧重人物在具体处境中的选择与解说，叙事节奏偏慢，适合连续观看而非跳集浏览。第一次打开时，建议从第 1 集看起，前面的铺垫会直接影响后续情节的理解。</p>
+          <p>关于片源，本页说明的是<strong>一本道理在线播放</strong>的常规方式：在线播放为主，缓存为辅。在线播放依赖网络状况，清晰度可在播放器内切换；缓存则要求设备留出足够空间，且需在页面内完成操作。两种方式使用的是同一套剧集编号，不会出现集数错位。</p>
+          <p>很多观众搜索<strong>一本道理免费观看</strong>时，真正想确认的是“是否需要注册”“是否有前置广告”。按当前页面呈现，观看不需要额外填写账号信息，播放前可能有短暂贴片，属于播放器侧的正常流程。若遇到无法加载的情况，优先检查网络与浏览器版本，再更换入口重试。</p>
+          <p>需要说明的是，本页是围绕<strong>一本道理免费在线观看</strong>整理的索引型页面，负责把入口、目录和说明放在一处，方便横向比较。剧集的具体更新以播放页显示为准，本页不替代播放页的时间信息。把这一点分清楚，能减少来回查找的成本。</p>
+        </div>
+        <aside class="aside-box">
+          <h3>页面信息速览</h3>
+          <ul>
+            <li>作品类型：剧情剧集，单集篇幅适中</li>
+            <li>剧集数量：共 12 集，按顺序编号</li>
+            <li>观看方式：在线播放为主，支持缓存</li>
+            <li>账号要求：观看无需额外注册</li>
+            <li>适看建议：从第 1 集顺序观看</li>
+            <li>页面性质：一本道理免费在线观看索引页</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIST -->
+  <section id="list">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="num">剧 集 目 录</div>
+        <h2>逐集索引，按集号定位</h2>
+        <p>以下为一本道理免费在线观看的剧集编号列表，点击集号进入对应播放位置。编号连续，未开放的集数会标注状态。</p>
+      </div>
+      <div class="eps">
+        <a class="ep" href="#entry"><span class="no">第 1 集</span><span class="play">播放</span></a>
+        <a class="ep" href="#entry"><span class="no">第 2 集</span><span class="play">播放</span></a>
+        <a class="ep" href="#entry"><span class="no">第 3 集</span><span class="play">播放</span></a>
+        <a class="ep" href="#entry"><span class="no">第 4 集</span><span class="play">播放</span></a>
+        <a class="ep" href="#entry"><span class="no">第 5 集</span><span class="play">播放</span></a>
+        <a class="ep" href="#entry"><span class="no">第 6 集</span><span class="play">播放</span></a>
+        <a class="ep" href="#entry"><span class="no">第 7 集</span><span class="play">播放</span></a>
+        <a class="ep" href="#entry"><span class="no">第 8 集</span><span class="play">播放</span></a>
+        <a class="ep" href="#entry"><span class="no">第 9 集</span><span class="play">播放</span></a>
+        <a class="ep" href="#entry"><span class="no">第 10 集</span><span class="play">播放</span></a>
+        <a class="ep" href="#entry"><span class="no">第 11 集</span><span class="play">播放</span></a>
+        <a class="ep" href="#entry"><span class="no">第 12 集</span><span class="play">播放</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QA -->
+  <section id="qa">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="num">常 见 疑 问</div>
+        <h2>关于一本道理免费在线观看的四个问题</h2>
+        <p>把反复出现的疑问集中回答，减少在播放页与索引页之间来回确认的次数。</p>
+      </div>
+      <div class="qa-grid">
+        <div class="qa">
+          <h3>需要注册或登录才能看吗？</h3>
+          <p>按本页说明，一本道理免费在线观看不要求额外注册账号，打开播放页即可开始。若播放器提示登录，多为个别片源侧的设置，可换回本页入口重试。</p>
+        </div>
+        <div class="qa">
+          <h3>集数顺序会不会错乱？</h3>
+          <p>目录按第 1 集到第 12 集连续编号，在线播放与缓存共用同一编号体系。如果发现某集内容与编号不符，以播放页标题为准并返回目录重新选择。</p>
+        </div>
+        <div class="qa">
+          <h3>播放卡顿怎么处理？</h3>
+          <p>先确认网络带宽，再在播放器内降低清晰度。仍无改善时，可改用缓存方式，把当前集保存到本地后观看，避开高峰时段的波动。</p>
+        </div>
+        <div class="qa">
+          <h3>本页与播放页是什么关系？</h3>
+          <p>本页是一本道理免费在线观看的索引与说明页面，负责入口、目录和观看提示；具体剧集内容与更新以播放页显示为准，两者分工不同。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section id="download">
+    <div class="wrap">
+      <div class="dl-band">
+        <div>
+          <h2>把已开放的剧集保存到本地</h2>
+          <p>适合通勤或网络不稳定时观看。下载内容与在线播放的集号一致，保存后无需联网即可打开；空间不足时，建议一次只缓存一到两集。</p>
+        </div>
+        <a class="btn btn-primary" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1" style="pointer-events:none">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 18h16"/></svg>
+          下载
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#24384d"/>
+          <path d="M20 16h18a7 7 0 0 1 7 7v25H27a7 7 0 0 1-7-7z" fill="none" stroke="#e8b34a" stroke-width="3"/>
+          <path d="M27 26h11M27 33h11" stroke="#e8b34a" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        一本道理免费在线观看
+      </div>
+      <div class="foot-links">
+        <a href="#entry">观看入口</a>
+        <a href="#about">作品内容</a>
+        <a href="#list">剧集目录</a>
+        <a href="#qa">常见问题</a>
+        <a href="#download">离线保存</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>本页为一本道理免费在线观看的索引与说明页面，剧集内容与更新以播放页为准。</span>
+      <span><a href="#top">回到顶部</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+    </html>
